@@ -1,0 +1,16 @@
+def func(d):
+    s = input()
+    flag=0
+    index=-1
+    for i in range(len(d)):
+        if d[i]==s:
+            flag=1
+        if d[i]=='}':
+            index=i-2
+            break
+    if flag:
+        print(d[index])
+    return
+
+d = input()
+func(d)
